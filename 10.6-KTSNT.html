@@ -17,24 +17,25 @@
         }
         return true
     }
-    let number = +prompt('Nhap vao so bat ki')
-    if (checkSNT(number)){
-        alert(`${number} la so nguyen to`)
-    }
-    else {
-        alert(`${number} KHONG la so nguyen to`)
-    }
-    //Nang cao: In ra so luong SNT
-    // let inputnSNT = +prompt('Nhap vao so luong SNT can in ra')
-    // let N = 2;
-    // let count = 0
-    // while (count < inputnSNT) {
-    //     if (checkSNT(N)) {
-    //         document.write(N + '<br>');
-    //         count++;
-    //     }
-    //     N++
+    // Kiem tra so nhap vao co phai so nguyen to ko
+    // let number = +prompt('Nhap vao so bat ki')
+    // if (checkSNT(number)){
+    //     alert(`${number} la so nguyen to`)
     // }
+    // else {
+    //     alert(`${number} KHONG la so nguyen to`)
+    // }
+    //Nang cao: In ra so luong SNT
+    let inputnSNT = +prompt('Nhap vao so luong SNT can in ra')
+    let N = 2;
+    let count = 0
+    while (count < inputnSNT) {
+        if (checkSNT(N)) {
+            document.write(N + '<br>');
+            count++;
+        }
+        N++
+    }
 
 </script>
 </body>
